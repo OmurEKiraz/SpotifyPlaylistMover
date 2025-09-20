@@ -50,7 +50,7 @@ Save your Client ID and Client Secret.
 
 You will need these for the script
 
-DO NOT SHARE YOUR CLIENT ID OR SECRET
+### DO NOT SHARE YOUR CLIENT ID OR CLIENT SECRET
 
 
 
