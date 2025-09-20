@@ -15,8 +15,12 @@ After creating add your client secret and client id to the code
 
 
 You must have atleast Python 3 
+
 Then you move on the python files location on your terminal (e.c cd Users/Desktop/SpotifyPlaylistMover)
+
 Then on the terminal run the script like python indexlist.py
+
 If you made no mistakes during creating the app a browser tab will open and it will request your consent 
+
 After you give consent it will take all the Track Name / Artist Name to the csv file
 
