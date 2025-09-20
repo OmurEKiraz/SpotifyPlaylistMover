@@ -1,10 +1,10 @@
-#🎵 Spotify Playlist to CSV Exporter 🎵
+# 🎵 Spotify Playlist to CSV Exporter 🎵
 
 This tool allows you to export any public Spotify playlist into a CSV file containing track names and artist names.
 The generated CSV file can then be used with my other tool to transfer your playlists to YouTube.
 
 
-##🚀 Features
+## 🚀 Features
 
 Fetches playlist data from the Spotify Web API
 
@@ -16,7 +16,7 @@ Beginner-friendly instructions included
 
 
 
-##🛠️ Requirements
+## 🛠️ Requirements
 
 Python 3.7 or higher
 
@@ -28,7 +28,7 @@ Python packages: spotipy
 
 
 
-##🔧 Step 1: Create a Spotify App
+## 🔧 Step 1: Create a Spotify App
 
 Go to the Spotify Developer Dashboard
  and log in.
@@ -55,7 +55,7 @@ DO NOT SHARE YOUR CLIENT ID OR SECRET
 
 
 
-##⚙️ Step 2: Prepare the Script
+## ⚙️ Step 2: Prepare the Script
 
 Download or clone the project folder to your computer.
 
@@ -67,7 +67,7 @@ Install required Python packages (spotipy, pandas, requests) if you don’t have
 
 
 
-##▶️ Step 3: Run the Script
+## ▶️ Step 3: Run the Script
 
 Open your terminal and navigate to the folder where indexlist.py is located.
 
@@ -79,7 +79,7 @@ After granting permission, the script will fetch all tracks from your selected p
 
 
 
-##📂 CSV Output Format
+## 📂 Example CSV Output Form
 
 The CSV file will look like this:
 
