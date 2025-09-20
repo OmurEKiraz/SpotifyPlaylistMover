@@ -60,6 +60,8 @@ Download or clone the project folder to your computer.
 
 Open indexlist.py and insert your Client ID and Client Secret in the appropriate fields.
 
+Insert the ID of the playlist you want to extract
+
 Make sure you have Python 3 installed.
 
 Install required Python packages (spotipy, pandas, requests) if you don’t have them.
