@@ -3,6 +3,7 @@
 This tool allows you to export any public Spotify playlist into a CSV file containing track names and artist names.
 The generated CSV file can then be used with my other tool to transfer your playlists to YouTube.
 
+### You can use my [CSV to Youtube Playlist](https://github.com/OmurEKiraz/CSVtoYoutubePlaylist) python utility to transfer your songs
 
 ## 🚀 Features
 
