@@ -1,4 +1,4 @@
-🎵 Spotify Playlist to CSV Exporter
+#🎵 Spotify Playlist to CSV Exporter
 
 This tool allows you to export any public Spotify playlist into a CSV file containing track names and artist names.
 The generated CSV file can then be used with other tools to transfer your playlists to YouTube or other platforms.
