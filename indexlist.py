@@ -6,7 +6,7 @@ import csv
 CLIENT_ID = ""  #Your Spotify Developer client id
 CLIENT_SECRET = "" #Your Spotify Developer client secret
 
-REDIRECT_URI = ""  # loopback URL (e.g., http://localhost:8888/callback) or your custom URL scheme (e.g., myapp://callback)
+REDIRECT_URI = ""  # loopback URL (e.g., http://127.0.0.1:8888/callback) or your custom URL scheme (e.g., myapp://callback)
 SCOPE = "playlist-read-private"
 
 # Spotify Connection
@@ -49,4 +49,5 @@ with open(f"{playlist_name}.csv", "w", newline="", encoding="utf-8") as f:
         writer.writerow([track_name, artists])
 
 print(f"{playlist_name} Saved to CSV: {playlist_name}.csv")
+
 
