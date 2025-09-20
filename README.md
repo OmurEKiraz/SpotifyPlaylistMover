@@ -12,7 +12,6 @@ Saves Track Name / Artist Name into a CSV file
 
 Lightweight, simple, and fast setup
 
-Beginner-friendly instructions included
 
 
 
