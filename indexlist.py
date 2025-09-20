@@ -9,7 +9,7 @@ CLIENT_SECRET = "" #Your Spotify Developer client secret
 REDIRECT_URI = ""  # loopback URL (e.g., http://localhost:8888/callback) or your custom URL scheme (e.g., myapp://callback)
 SCOPE = "playlist-read-private"
 
-# Spotify bağlantısı
+# Spotify Connection
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=CLIENT_ID,
     client_secret=CLIENT_SECRET,
@@ -26,7 +26,7 @@ playlist = sp.playlist(playlist_id)
 playlist_name = playlist['name']
 total_tracks = playlist['tracks']['total']
 
-print(f"Çekiliyor: {playlist_name} ({total_tracks} şarkı)")
+print(f"Getting: {playlist_name} ({total_tracks} tracks)")
 
 # Pagination for getting all tracks on bigger playlists(500+ songs)
 tracks = []
@@ -48,4 +48,5 @@ with open(f"{playlist_name}.csv", "w", newline="", encoding="utf-8") as f:
         artists = ", ".join([artist['name'] for artist in track['artists']])
         writer.writerow([track_name, artists])
 
-print(f"{playlist_name} CSV dosyasına kaydedildi: {playlist_name}.csv")
+print(f"{playlist_name} Saved to CSV: {playlist_name}.csv")
+
