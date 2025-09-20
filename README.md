@@ -3,10 +3,15 @@ Take your playlist and travel to youtube
 
 
 You can get any public playlists id and then save them as a csv file and after that using my other tool you can transfer them to youtube playlists
+
 First You open Spotify developers webpage and make a new app (https://developer.spotify.com/dashboard)
+
 After creating you fill the infos
+
 You must fill the loopback url as in the commented (http://127.0.0.1:8888/callback) or you should add a https domain 
+
 Check the web API at the bottom and create app
+
 After creating add your client secret and client id to the code
 
 
