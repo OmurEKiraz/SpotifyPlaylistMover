@@ -78,6 +78,9 @@ The first time you run it, a browser window will open asking for permission to a
 
 After granting permission, the script will fetch all tracks from your selected playlist and save them into a CSV file named playlist.csv.
 
+## 📜 License
+
+This project is licensed under the MIT License 📝
 
 
 ## 📂 Example CSV Output Form
