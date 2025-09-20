@@ -1,32 +1,25 @@
 # 🎵 Spotify Playlist to CSV Exporter 🎵
 
-This tool allows you to export any public Spotify playlist into a CSV file containing track names and artist names.
-The generated CSV file can then be used with my other tool to transfer your playlists to YouTube.
-
-### You can use my [CSV to Youtube Playlist](https://github.com/OmurEKiraz/CSVtoYoutubePlaylist) python utility to transfer your songs
+Export any public Spotify playlist to a CSV containing track names and artists. The generated CSV can then be imported into CSV to YouTube Playlist
+ to transfer songs to YouTube.
 
 ## 🚀 Features
 
-Fetches playlist data from the Spotify Web API
+Fetches playlist data via Spotify Web API
 
-Saves Track Name / Artist Name into a CSV file
+Saves track names and artists into a CSV file
 
-Lightweight, simple, and fast setup
+Lightweight, fast, and easy to use
 
+## 🛠 Requirements
 
+Python 3.7 or higher 🐍
 
+Spotify Developer account 🌐
 
-## 🛠️ Requirements
+Spotify API Client ID and Client Secret 🔑
 
-Python 3.7 or higher
-
-A Spotify Developer Dashboard account
-
-Spotify API Client ID and Client Secret
-
-Python packages: spotipy
-
-
+Python packages: spotipy, pandas, requests
 
 ## 🔧 Step 1: Create a Spotify App
 
@@ -35,61 +28,52 @@ Go to the Spotify Developer Dashboard
 
 Click Create an App.
 
-Fill in the required fields:
+Fill in the required fields (App Name, Description optional).
 
-App Name: Any name you like
+Add a Redirect URI (callback URL):
 
-App Description: Optional
+http://127.0.0.1:8888/callback
 
-Add a Redirect URI (Callback URL):
 
-Use http://127.0.0.1:8888/callback for local development
-
-You can also use a secure HTTPS URL if you prefer
+You can also use a secure HTTPS URL if preferred.
 
 Save your Client ID and Client Secret.
-
-You will need these for the script
-
-### DO NOT SHARE YOUR CLIENT ID OR CLIENT SECRET
-
-
+### ⚠️ Do not share your Client ID or Client Secret publicly.
 
 ## ⚙️ Step 2: Prepare the Script
 
-Download or clone the project folder to your computer.
+Download or clone this project folder to your computer.
 
-Open indexlist.py and insert your Client ID and Client Secret in the appropriate fields.
+Open indexlist.py in your editor and insert your Client ID and Client Secret.
 
-Insert the ID of the playlist you want to extract
+Insert the Spotify playlist ID you want to export.
 
-Make sure you have Python 3 installed.
+Make sure Python 3.7+ is installed 🐍.
 
-Install required Python packages (spotipy, pandas, requests) if you don’t have them.
+Install required Python packages if you haven’t:
 
-
+pip install spotipy pandas requests
 
 ## ▶️ Step 3: Run the Script
 
-Open your terminal and navigate to the folder where indexlist.py is located.
+Open a terminal and navigate to the folder containing indexlist.py.
 
-Run the script using Python.
+Run the script with Python:
 
-The first time you run it, a browser window will open asking for permission to access your Spotify account.
+python indexlist.py
 
-After granting permission, the script will fetch all tracks from your selected playlist and save them into a CSV file named playlist.csv.
+
+The first run will open a browser window asking for permission to access your Spotify playlists.
+
+This is safe because it uses your own developer account and does not share data externally 🔒.
+
+After granting permission, the script fetches all tracks from the selected playlist and saves them to playlist.csv 📄.
+
+## 📂 Example CSV Output
+Track Name,Artist Name
+Song Example 1,Artist 1
+Song Example 2,Artist 2
 
 ## 📜 License
 
 This project is licensed under the MIT License 📝
-
-
-## 📂 Example CSV Output Form
-
-The CSV file will look like this:
-
-Track Name	Artist Name
-Song Example 1	,Artist 1
-Song Example 2	,Artist 2
-
-
